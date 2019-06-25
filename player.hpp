@@ -1,6 +1,7 @@
 //Dungeon Explorer
 // An Interactive C++ Adventure
-
+#ifndef PLAYER
+#define PLAYER
 #include <iostream>
 #include <string>
 #include "item.hpp"
@@ -8,29 +9,29 @@
 
 class Player
 {
-	string name;
-	Item[] inventory;
+	std::string name;
+	Item *inventory; //inventory array
 	
 public:
 	~Player();
-	string getName() const;
-	void setName(string newName);
-	Item[] getInventory() const;
+	std::string getName() const;
+	void setName(std::string newName);
+	Item *getInventory() const;
 	
 	
-}
+};
 
-void Player::~Player() 
+Player::~Player() 
 {
 	//destructor
 }
 
-string Player::getName()
+std::string Player::getName() const
 {
 	return name;
 }
 
-void Player::setName(string newName)
+void Player::setName(std::string newName)
 {
 	name = newName;
 	
@@ -38,7 +39,9 @@ void Player::setName(string newName)
 
 
 
-Item[] Player::getInventory()
+Item *Player::getInventory() const
 {
 	return inventory;
 }
+
+#endif

@@ -1,45 +1,46 @@
 //Item class
-
+#ifndef ITEM
+#define ITEM
 
 #include <string>
 
 class Item
 {
 	
-	string name;
+	std::string name;
 	unsigned short int attackPower;
 	
 public:
-	Item(string initialName, unsigned short int initialAttackPower);
+	Item(std::string initialName, unsigned short int initialAttackPower);
 	~Item();
-	string getName() const;
-	void setName(); //Nickname item
+	std::string getName() const;
+	void setName(std::string newName); //Nickname item
 	unsigned short int getAttackPower() const;
 	
 	
 	 
 	
-}
+};
 
-void Item::~Item() 
+Item::~Item() 
 {
 	//destructor
 }
 
-string Item::getName()
+std::string Item::getName() const
 {
 	return name;
 }
 
-void Item::setName(newName)
+void Item::setName(std::string newName)
 {
 	name = newName;
 	
 }
 
-unsigned short int Item::getAttackPower()
+unsigned short int Item::getAttackPower() const
 {
 	return attackPower;
 }
 
-
+#endif

@@ -7,5 +7,6 @@
 
 class Player
 {
+	string playerName;
 	
 }

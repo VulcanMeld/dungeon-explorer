@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include "item.h"
+#include "item.hpp"
 
 
 class Player
@@ -13,9 +13,9 @@ class Player
 	
 public:
 	~Player();
-	string getName;
+	string getName() const;
 	void setName(string newName);
-	Item[] getInventory();
+	Item[] getInventory() const;
 	
 	
 }

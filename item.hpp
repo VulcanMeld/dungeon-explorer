@@ -12,9 +12,9 @@ class Item
 public:
 	Item(string initialName, unsigned short int initialAttackPower);
 	~Item();
-	string getName();
+	string getName() const;
 	void setName(); //Nickname item
-	unsigned short int getAttackPower();
+	unsigned short int getAttackPower() const;
 	
 	
 	 

@@ -1,5 +1,6 @@
-#ifndef GAME
-#define GAME
+#ifndef GAME_HPP_INCLUDED
+#define GAME_HPP_INCLUDED
+
 #include <iostream>
 #include <string>
 #include "item.hpp"

@@ -1,6 +1,6 @@
 //Item class
-#ifndef ITEM
-#define ITEM
+#ifndef ITEM_HPP_INCLUDED
+#define ITEM_HPP_INCLUDED
 
 #include <string>
 

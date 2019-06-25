@@ -1,7 +1,7 @@
 //Dungeon Explorer
 // An Interactive C++ Adventure
-#ifndef PLAYER
-#define PLAYER
+#ifndef PLAYER_HPP_INCLUDED
+#define PLAYER_HPP_INCLUDED
 #include <iostream>
 #include <string>
 #include "item.hpp"
